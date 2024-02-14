@@ -1,0 +1,30 @@
+.location_section
+    padding: 0 100px
+    margin-bottom: 50px
+    
+.location
+    background-color: #F6F6F6
+    max-width: $max-width - 100
+    margin: auto
+    border-radius: 25px
+    display: grid
+    grid-auto-flow: row
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr))
+    justify-content: center
+    padding: 50px
+    row-gap: 50px
+    column-gap: 60px
+    transition: flex-wrap 0.5s
+    &__article
+        background: linear-gradient(#FF6060 70%, #ee4545)
+        border-radius: 10px
+        position: relative
+        height: 340px
+        &--h2
+            position: absolute
+            bottom: 0
+            margin: 20px
+            font-family: Montserrat
+            font-weight: 700
+            font-size: 18px
+            color: white
