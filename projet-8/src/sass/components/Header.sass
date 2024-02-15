@@ -18,6 +18,22 @@
             font-weight: 500
             font-size: 24px
             & li
-                padding: 3px 0
                 cursor: pointer
                 user-select: none
+                &::after
+                    display: block
+                    height: 1px
+                    width: 0px
+                    content: ""
+                    background-color: #ff6060
+                    transition: width 0.3s, background-color 0.3s
+                &:hover::after
+                    height: 1px
+                    width: 100%
+                    content: ""
+            & .menu-select::after
+                display: block
+                height: 1px
+                width: 100%
+                content: ""
+                background-color: black
