@@ -16,10 +16,21 @@
     column-gap: 60px
     transition: flex-wrap 0.5s
     &__article
-        background: linear-gradient(#FF6060 70%, #ee4545)
+        background: #FF6060
         border-radius: 10px
         position: relative
         height: 340px
+        overflow: hidden
+        &--shadow-overlay
+            background: linear-gradient(#00000000 70%, #00000093)
+            position: absolute
+            top: 0
+            height: 100%
+            width: 100%
+        &--img
+            object-fit: cover
+            height: 100%
+            width: 100%
         &--h2
             position: absolute
             bottom: 0
@@ -28,3 +39,4 @@
             font-weight: 700
             font-size: 18px
             color: white
+            text-shadow: 0 0 5px black
