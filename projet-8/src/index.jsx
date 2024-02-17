@@ -22,6 +22,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home logements={logementsJson} />} />
+        <Route path="/home" element={<Home logements={logementsJson} />} />
         <Route path="/a-propos" element={<Apropos />} />
         {apparts}
         <Route path="*" element={<NotFound />} />

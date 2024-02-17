@@ -10,12 +10,12 @@ function Header(props) {
       <img src={logo} alt="logo kasa" className="header__img" />
       <nav className="header__nav">
         {menuAcceuil ? (
-          <Link className="menu-select" to="/">
+          <Link className="menu-select" to="/home">
             Accueil
           </Link>
         ) : (
           <Link
-            to="/"
+            to="/home"
             onClick={() => {
               updateAcceuil(true)
               updateAPropos(false)
