@@ -9,31 +9,31 @@
     &__img
         height: 68px
     &__nav
-        &--ul
-            list-style: none
-            display: flex
-            flex-direction: row
-            gap: 50px
-            font-family: "Montserrat", sans-serif
-            font-weight: 500
-            font-size: 24px
-            & li
-                cursor: pointer
-                user-select: none
-                &::after
-                    display: block
-                    height: 1px
-                    width: 0px
-                    content: ""
-                    background-color: #ff6060
-                    transition: width 0.3s, background-color 0.3s
-                &:hover::after
-                    height: 1px
-                    width: 100%
-                    content: ""
-            & .menu-select::after
+        list-style: none
+        display: flex
+        flex-direction: row
+        gap: 50px
+        font-family: "Montserrat", sans-serif
+        font-weight: 500
+        font-size: 24px
+        & a
+            all: unset
+            cursor: pointer
+            user-select: none
+            &::after
                 display: block
+                height: 1px
+                width: 0px
+                content: ""
+                background-color: #ff6060
+                transition: width 0.3s, background-color 0.3s
+            &:hover::after
                 height: 1px
                 width: 100%
                 content: ""
-                background-color: black
+        & .menu-select::after
+            display: block
+            height: 1px
+            width: 100%
+            content: ""
+            background-color: black

@@ -1,14 +1,19 @@
 import Banner from '../../components/Banner'
 import imgBanner from '../../../assets/bannier_index.png'
-import Location from './components/Locations';
+import Location from './components/Locations'
+import logementsJson from '../../../assets/logements.json'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
-function Home(props) {
+function Home() {
   return (
     <>
-      <Banner titre="Chez vous, partout et ailleurs" img={imgBanner}/>
-      <Location logements={props.logements}/>
+      <Header linkAPropos={false} linkAccueil={true} />
+      <Banner titre="Chez vous, partout et ailleurs" img={imgBanner} />
+      <Location logements={logementsJson} />
+      <Footer />
     </>
   )
 }
 
-export default Home;
+export default Home
