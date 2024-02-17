@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Header(props) {
-  const [menuAcceuil, updateAcceuil] = useState(props.LinkAcceuil)
-  const [menuAPropos, updateAPropos] = useState(props.menuAPropos)
+  const [menuAcceuil, updateAcceuil] = useState(props.linkAccueil)
+  const [menuAPropos, updateAPropos] = useState(props.linkAPropos)
   return (
     <header className="header">
       <img src={logo} alt="logo kasa" className="header__img" />
