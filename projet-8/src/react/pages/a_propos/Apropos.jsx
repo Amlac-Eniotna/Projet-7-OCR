@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import imgBanner from '../../../assets/bannier_a_propos.png'
-import DropDown from '../../global/DropDown'
+import DropDown from '../../components/DropDown'
 
 let texts = [
   {

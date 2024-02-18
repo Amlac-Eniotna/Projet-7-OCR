@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Appartement(props) {
   let logement = props.logement
   return (
-    <Link to={'logement/' + logement.id}>
+    <Link to={'/logement/' + logement.id}>
       <article className="location__article">
         <img
           src={logement.cover}

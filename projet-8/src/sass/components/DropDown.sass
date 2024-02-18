@@ -1,0 +1,39 @@
+.dropdown
+    max-width: 1023px
+    margin-bottom: 30px
+    margin-right: auto
+    margin-left: auto
+    &__title
+        position: relative
+        padding: 10px 15px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-radius: 5px
+        background-color: #FF6060
+        color: white
+        font-size: 24px
+        z-index: 1
+        &--img
+            height: 32px
+            width: 32px
+            transform: rotate(360deg)
+            transition: transform 0.5s
+    &__text
+        z-index: -1
+        position: relative
+        top: -5px
+        padding: 0 20px 0 20px
+        background-color: #F6F6F6
+        border-radius: 0 0 5px 5px
+        max-height: 0
+        overflow: hidden
+        transition: padding 0.5s, max-height 0.5s
+
+.dropdown
+    & .developpe-text
+        padding: 25px 20px 20px 20px
+        max-height: 500px
+        transition: max-height 0.5s, padding 0.5s
+    & .developpe-img
+        transform: rotate(180deg)

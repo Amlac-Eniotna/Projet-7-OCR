@@ -31,7 +31,7 @@ function Header(props) {
         ) : (
           <Link
             to="/a-propos"
-            onCLinkck={() => {
+            onClick={() => {
               updateAcceuil(false)
               updateAPropos(true)
             }}
