@@ -8,14 +8,7 @@ function DropDown(props) {
     setOpen(!open)
   }
 
-  let texte = props.textes.map((text) => (
-    <p
-      key={props.title + text}
-      className={open ? 'dropdown__text developpe-text' : 'dropdown__text'}
-    >
-      {text}
-    </p>
-  ))
+  let texte = props.textes.map((text) => <p key={props.title + text}>{text}</p>)
 
   return (
     <div className="dropdown">
@@ -29,7 +22,11 @@ function DropDown(props) {
           }
         />
       </h3>
-      {texte}
+      <div
+        className={open ? 'dropdown__text developpe-text' : 'dropdown__text'}
+      >
+        {texte}
+      </div>
     </div>
   )
 }
