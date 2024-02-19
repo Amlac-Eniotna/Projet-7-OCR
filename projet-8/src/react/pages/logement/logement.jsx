@@ -1,6 +1,8 @@
 import Header from '../../components/Header'
 import Carrousel from './components/Carrousel'
 import DropDown from '../../components/DropDown'
+import starFull from '../../../assets/star-full.svg'
+import starEmpty from '../../../assets/star-empty.svg'
 
 function Logement(props) {
   let tags = props.logement.tags.map((tag) => (
@@ -8,6 +10,7 @@ function Logement(props) {
       {tag}
     </p>
   ))
+  const range = [1, 2, 3, 4, 5]
 
   return (
     <>
@@ -30,7 +33,25 @@ function Logement(props) {
               className="info__user--img"
             />
           </div>
-          <p>{props.logement.rating}</p>
+          <div className="info__note">
+            {range.map((rangeElem) =>
+              props.logement.rating >= rangeElem ? (
+                <img
+                  key={rangeElem.toString()}
+                  className="info__note--star"
+                  src={starFull}
+                  alt="étoile plein"
+                />
+              ) : (
+                <img
+                  key={rangeElem.toString()}
+                  className="info__note--star"
+                  src={starEmpty}
+                  alt="étoile vide"
+                />
+              ),
+            )}
+          </div>
         </div>
       </section>
       <section className="collapse">
