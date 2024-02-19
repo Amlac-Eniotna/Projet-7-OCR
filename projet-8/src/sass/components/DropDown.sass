@@ -24,17 +24,17 @@
         z-index: -1
         position: relative
         top: -5px
-        padding: 0 20px 0 20px
         background-color: #F6F6F6
         border-radius: 0 0 5px 5px
         max-height: 0
         overflow: hidden
-        transition: padding 0.5s, max-height 0.5s
+        transition: max-height 0.5s linear
+        &--div
+            padding: 25px 20px 20px 20px
+
 
 .dropdown
     & .developpe-text
-        padding: 25px 20px 20px 20px
         max-height: 500px
-        transition: max-height 0.5s, padding 0.5s
     & .developpe-img
         transform: rotate(180deg)

@@ -25,7 +25,7 @@ function DropDown(props) {
       <div
         className={open ? 'dropdown__text developpe-text' : 'dropdown__text'}
       >
-        {texte}
+        <div className="dropdown__text--div">{texte}</div>
       </div>
     </div>
   )
