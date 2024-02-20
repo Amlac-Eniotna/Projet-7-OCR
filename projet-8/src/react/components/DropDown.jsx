@@ -11,21 +11,25 @@ function DropDown(props) {
   let texte = props.textes.map((text) => <p key={props.title + text}>{text}</p>)
 
   return (
-    <div className="dropdown">
-      <h3 className="dropdown__title" onClick={whichClass}>
-        {props.title}
-        <img
-          src={arrow}
-          alt="arrow"
-          className={
-            open ? 'dropdown__title--img developpe-img' : 'dropdown__title--img'
-          }
-        />
-      </h3>
-      <div
-        className={open ? 'dropdown__text developpe-text' : 'dropdown__text'}
-      >
-        <div className="dropdown__text--div">{texte}</div>
+    <div className={props.className}>
+      <div className="dropdown">
+        <h3 className="dropdown__title" onClick={whichClass}>
+          {props.title}
+          <img
+            src={arrow}
+            alt="arrow"
+            className={
+              open
+                ? 'dropdown__title--img developpe-img'
+                : 'dropdown__title--img'
+            }
+          />
+        </h3>
+        <div
+          className={open ? 'dropdown__text developpe-text' : 'dropdown__text'}
+        >
+          <div className="dropdown__text--div">{texte}</div>
+        </div>
       </div>
     </div>
   )

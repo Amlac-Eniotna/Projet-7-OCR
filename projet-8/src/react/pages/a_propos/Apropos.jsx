@@ -31,7 +31,12 @@ let texts = [
 ]
 
 let drop = texts.map((text) => (
-  <DropDown key={text.title} title={text.title} textes={text.textes} />
+  <DropDown
+    key={text.title}
+    title={text.title}
+    textes={text.textes}
+    className="dropdown__container--apropos"
+  />
 ))
 
 function Apropos() {
