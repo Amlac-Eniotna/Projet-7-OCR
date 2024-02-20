@@ -11,7 +11,7 @@ function Carrousel(props) {
           <img
             className="carrousel__arrow--left"
             src={arrow}
-            alt="arrow left"
+            alt="fleche gauche"
             onClick={() => {
               setCarrouselIndex(carrouselIndex <= 0 ? props.src.length - 1 : carrouselIndex - 1)
             }}
@@ -19,7 +19,7 @@ function Carrousel(props) {
           <img
             className="carrousel__arrow--right"
             src={arrow}
-            alt="arrow right"
+            alt="fleche droite"
             onClick={() => {
               setCarrouselIndex(carrouselIndex >= props.src.length - 1 ? 0 : carrouselIndex + 1)
             }}
