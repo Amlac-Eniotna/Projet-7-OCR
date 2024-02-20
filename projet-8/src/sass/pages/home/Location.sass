@@ -9,7 +9,7 @@
     border-radius: 25px
     display: grid
     grid-auto-flow: row
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr))
     justify-content: center
     padding: 50px
     row-gap: 50px
@@ -42,3 +42,13 @@
             font-size: 18px
             color: white
             text-shadow: 0 0 5px black
+
+@media screen and (max-width: 1022px)
+    .location_section
+        padding: 0 20px
+        margin-bottom: 27px
+    .location
+        background-color: white
+        padding: 0
+        gap: 20px
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr))
