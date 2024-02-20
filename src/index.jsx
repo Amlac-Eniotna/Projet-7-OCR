@@ -20,13 +20,15 @@ const apparts = logementsJson.map((appart) => (
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Routes>
-        <Route path="/" element={<Home logements={logementsJson} />} />
-        <Route path="/home" element={<Home logements={logementsJson} />} />
-        <Route path="/a-propos" element={<Apropos />} />
-        {apparts}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div>
+        <Routes>
+          <Route path="/" element={<Home logements={logementsJson} />} />
+          <Route path="/home" element={<Home logements={logementsJson} />} />
+          <Route path="/a-propos" element={<Apropos />} />
+          {apparts}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   </React.StrictMode>,
