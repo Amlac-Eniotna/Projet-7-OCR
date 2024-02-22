@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 function DropDown(props) {
   const [open, setOpen] = useState(false)
-
+  // inverse la valeur d'ouverture du collapse puis change le className en fonction du tru ou du false
   const whichClass = () => {
     setOpen(!open)
   }

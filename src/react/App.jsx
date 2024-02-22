@@ -6,6 +6,7 @@ import Logement from './pages/logement/Logement'
 import NotFound from './pages/404/404'
 import Footer from './components/Footer'
 
+// test si le fichier json est disponible
 let logementsJson
 try {
   logementsJson = require('../assets/logements.json')
@@ -14,6 +15,7 @@ try {
 }
 
 function App() {
+  // génère des routes pour chaque appartement disponible
   const apparts = logementsJson.map((appart) => (
     <Route
       key={appart.id}
@@ -21,6 +23,7 @@ function App() {
       element={<Logement logement={appart} />}
     />
   ))
+
   return (
     <Router>
       <div>
@@ -29,6 +32,7 @@ function App() {
           <Route path="/home" element={<Home logements={logementsJson} />} />
           <Route path="/a-propos" element={<Apropos />} />
           {apparts}
+          {/* redirige vers la page 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

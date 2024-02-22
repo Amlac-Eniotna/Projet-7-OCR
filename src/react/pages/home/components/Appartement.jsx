@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 function Appartement(props) {
   let logement = props.logement
   return (
+    // redirige vers la page correspondante à la carte
     <Link to={'/logement/' + logement.id}>
       <article className="location__article">
         <img

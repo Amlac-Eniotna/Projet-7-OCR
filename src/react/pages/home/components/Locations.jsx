@@ -1,7 +1,7 @@
 import Appartement from './Appartement'
 
 function Location(props) {
-  console.log(props.logements)
+  //génère le nombres de cartes de logements pour la page home
   const logements = props.logements.map((appart) => (
     <Appartement logement={appart} key={appart.id} />
   ))

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 function Header(props) {
+  // le state sert à savoir sur quelle lien on se trouve pour placer la barre noir en dessous
   const [menuAcceuil, updateAcceuil] = useState(props.linkAccueil)
   const [menuAPropos, updateAPropos] = useState(props.linkAPropos)
   return (

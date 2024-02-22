@@ -11,6 +11,7 @@ function Home(props) {
     <>
       {location.pathname === '/' ? <Navigate to="/home" /> : null}
       <Header linkAPropos={false} linkAccueil={true} />
+      {/* si aucun logement n'est disponible alors affiche l'erreur 504 (classeName similaire à la page 404)*/}
       {props.logements.length === 0 ? (
         <section className="erreur-404">
           <NoServer />

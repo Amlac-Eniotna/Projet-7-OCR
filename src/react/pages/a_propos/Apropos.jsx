@@ -3,6 +3,7 @@ import Banner from '../../components/Banner'
 import imgBanner from '../../../assets/bannier_a_propos.png'
 import DropDown from '../../components/DropDown'
 
+// message disponible sur la pages à propos
 let texts = [
   {
     title: 'Fiabilité',
@@ -30,6 +31,7 @@ let texts = [
   },
 ]
 
+// génère plusieurs collapse en fonction de la liste ci-dessus
 let drop = texts.map((text) => (
   <DropDown
     key={text.title}
