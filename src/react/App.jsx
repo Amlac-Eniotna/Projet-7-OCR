@@ -12,6 +12,7 @@ try {
   logementsJson = require('../assets/logements.json')
 } catch (e) {
   logementsJson = []
+  console.error(e)
 }
 
 function App() {
